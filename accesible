@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Accesible</title>
+    <style>
+        /* Estilos para el contraste adecuado */
+        body {
+            font-family: Arial, sans-serif;
+            color: #000;
+            background-color: #FFF;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #0056b3; /* Color con buen contraste */
+            text-decoration: none;
+        }
+
+        a:focus, a:hover {
+            outline: 2px dashed hsl(353, 90%, 51%); /* Indicador de enfoque accesible */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .alto-contraste {
+            background-color: #000;
+            color: #FFF;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Etiqueta HTML Semántica: Header -->
+    <header>
+        <h1>Bienvenidos a mi página accesible</h1>
+        <nav role="navigation" aria-label="Menú principal">
+            <ul>
+                <li><a href="#inicio" tabindex="0">Inicio</a></li>
+                <li><a href="#contenido" tabindex="0">Contenido</a></li>
+                <li><a href="#contacto" tabindex="0">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal con Role ARIA -->
+    <main id="inicio" role="main">
+        <section>
+            <h2>Sobre nosotros</h2>
+            <p>Este es un ejemplo de una página web que sigue las mejores prácticas de accesibilidad web.</p>
+            <img src="imagen-accesible.jpg" alt="Imagen descriptiva de un paisaje natural">
+        </section>
+
+        <section>
+            <h2>Características accesibles</h2>
+            <ul>
+                <li>Textos alternativos para imágenes.</li>
+                <li>Navegación a través del teclado.</li>
+                <li>Contraste de colores adecuado.</li>
+                <li>Roles ARIA para mejorar la accesibilidad.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Etiqueta HTML Semántica: Footer -->
+    <footer>
+        <div class="alto-contraste">
+            <p>Texto con alto contraste para asegurar legibilidad.</p>
+        </div>
+        <p>&copy; 2025 Página Accesible. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Navegación por teclado con Tab -->
+    <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Tab') {
+                console.log('Navegación con Tab activa.');
+            }
+        });
+    </script>
+</body>
+</html>
