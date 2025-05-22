@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="description" content="WebSur Studio - Tu visión web desde el sur. Diseño y desarrollo web en Málaga." >
+    <meta name="keywords" content="diseño web, desarrollo web, Málaga, Wordpress, SEO" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>WebSur Studio - Inicio</title>
+    <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
+    <!-- Se enlazarán posteriormente el CSS y el JS -->
+    <link rel="stylesheet" href="CSS/styles.css">
+  </head>
+  <body>
+    <!-- Encabezado con el logo a la izquierda y el menú a la derecha -->
+    <header class="header">
+      <div class="container header-content">
+        <!-- Logo en la parte izquierda -->
+        <a href="index.html" class="logo">
+        <img src="imagenes/websur-logo.svg" alt="Logo WebSur Studio">
+        </a>
+        <!-- Botón Hamburguesa (visible solo en móvil) -->
+        <button class="menu-toggle" aria-label="Abrir menú">
+          <!-- Puedes usar un icono o un svg de hamburguesa -->
+          0
+        </button>
+
+        <!-- Menú de navegación -->
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html">Sobre Nosotros</a></li>
+            <li class="menu-item-has-children">
+              <a href="services.html">Servicios</a>
+              <ul class="submenu" id="subsub">
+                <li><a href="services.html#introduccion">Introducción</a></li>
+                <li><a href="services.html#disenoweb">Diseño Web</a></li>
+                <li><a href="services.html#desarrollocms">Desarrollo CMS</a></li>
+                <li><a href="services.html#tiendaonline">Tiendas Online</a></li>
+                <li><a href="services.html#optimizacionseo">Optimización SEO/SEM</a></li>
+                <li><a href="services.html#mantenimiento">Mantenimiento</a></li>
+              </ul>
+            </li>
+            <li><a href="portfolio.html">Portafolio</a></li>
+            <li><a href="team.html">Equipo</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Breadcrumbs -->
+      <div class="breadcrumbs">
+        <a href="index.html">Inicio</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Tu visión web desde el sur</h1>
+        <img src="imagenes/banner.jfif" alt="horizonte malagueño" height="13%" width="501">
+        <p>Creamos experiencias web innovadoras para impulsar tu negocio.</p>
+
+        <a href="about.html" class="btn-cta">Conócenos</a>
+      </section>
+
+      <section class="section-services">
+        <h2>Nuestros Servicios</h2>
+        <div class="services-grid">
+          <div class="service-item">
+            <h3>Diseóo Web a Medida</h3>
+            <p>
+              Desarrollamos sitios web técnicos y adaptados a tus necesidades. Nuestros diseños a medida combinan
+              funcionalidad y estética para transmitir la esencia de tu marca.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Soluciones con CMS</h3>
+            <p>
+              Integramos CMS como WordPress, Joomla o Drupal para que puedas gestionar tu contenido de manera sencilla,
+              flexible y escalable, sin necesidad de conocimientos técnicos avanzados.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>E-commerce</h3>
+            <p>
+              Creamos tiendas online optimizadas y seguras, con pasarelas de pago integradas y una gestión de catálogos
+              intuitiva que facilitará el crecimiento de tu negocio en el entorno digital.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-portfolio">
+        <h2>Portafolio</h2>
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <img src="imagenes/Antonio-Sario-02.jpg" alt="Primer proyecto" width="50%">
+            <div class="info">
+              <h5>Proyecto 1</h5>
+              <p>Breve descripción del proyecto, las tecnologías utilizadas y el resultado final.</p>
+              <a href="proyecto1.html" class="portfolio-link">Ver detalles</a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="imagenes/Captura-de-pantalla-2019-12-07-a-las-11.10.23.png" alt="Segundo proyecto" width="50%">
+            <div class="info">
+              <h5>Proyecto 2</h5>
+              <p>Breve descripción del proyecto, las tecnologías utilizadas y el resultado final.</p>
+              <a href="proyecto2.html" class="portfolio-link">Ver detalles</a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="imagenes/proyecto-sandra-urbina-02-1024x674.jpg" alt="Tercer proyecto" width="50%">
+            <div class="info">
+              <h5>Proyecto 3</h5>
+              <p>Breve descripción del proyecto, las tecnologías utilizadas y el resultado final.</p>
+              <a href="proyecto3.html" class="portfolio-link">Ver detalles</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-testimonios">
+        <h2>Testimonios</h2>
+        <div class="testimonios-grid">
+          <div class="testimonio-item">
+            <img src="imagenes/cliente1.jfif" alt="Foto de Cliente 1" class="testimonio-img">
+            <blockquote>
+              <p>Realmente profesionales y atentos. Mi página web luce fantástica gracias a su trabajo.</p>
+              <footer>- Cliente 1, Empresa XYZ</footer>
+            </blockquote>
+          </div>
+          <div class="testimonio-item">
+            <img src="imagenes/cliente2.jfif" alt="Foto de Cliente 2" class="testimonio-img">
+            <blockquote>
+              <p>
+                El equipo de WebSur Studio supo entender mis necesidades y plasmar mis ideas en la web perfectamente.
+              </p>
+              <footer>- Cliente 2, Compañia ABC</footer>
+            </blockquote>
+          </div>
+          <div class="testimonio-item">
+            <img src="imagenes/cliente3.jfif" alt="Foto de Cliente 3" class="testimonio-img">
+            <blockquote>
+              <p>¡Excelente trabajo! La comunicación fue fluida y el resultado final superó mis expectativas.</p>
+              <footer>- Cliente 3, Startup Nexo</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-cta">
+        <h2>¿Listo para impulsar tu presencia online?</h2>
+        <p>Contáctanos ahora y descubre cómo podemos ayudarte a crecer en el mundo digital.</p>
+        <a href="contact.html" class="btn-cta">Contacta con nosotros</a>
+      </section>
+    </main>
+    <footer>
+      <p>2025 WebSur Studio, S.L. - CIF: B29292929 - Calle Granada, 23-1-A, Málaga</p>
+      <p>
+        <a href="legal.html">Aviso Legal</a> | <a href="privacy.html">Política de Privacidad</a> |
+        <a href="cookies.html">Política de Cookies</a> | <a href="mapa.html">Mapa del Sitio</a>
+      </p>
+      <div class="social-links">
+        <!-- iconos o links a redes sociales -->
+        <a href="www.instagram.com/mio">
+          <img src="imagenes/facebook_109862.svg" alt="accede a nuestra cuenta de instagram" width="5%">
+        </a>
+        <a href="www.facbook.com/mio">
+          <img src="imagenes/instagam_109863.svg" alt="accede a nuestra cuenta de facebook" width="5%">
+        </a>
+      </div>
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img
+            style="border: 0; width: 88px; height: 31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="�CSS V�lido!">
+        </a>
+      </p>
+    </footer>
+    <script>
+      // Seleccionamos el botón y el nav
+      const toggleBtn = document.querySelector(".menu-toggle");
+      const nav = document.querySelector(".main-nav");
+
+      toggleBtn.addEventListener("click", () => {
+        // Al hacer clic, alternamos la clase .open
+        nav.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>
