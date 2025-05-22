@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Hamburguesa con Submenú</title>
+    <!--<link rel="stylesheet" href="styles.css">-->
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    position: relative;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f9f9f9;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.menu-list.active {
+    transform: translateX(0);
+}
+
+.menu-item {
+    padding: 15px;
+    position: relative;
+}
+
+.menu-item:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #f9f9f9;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.submenu-item {
+    padding: 15px;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .menu-list {
+        flex-direction: column;
+    }
+}
+</style>
+</head>
+<body>
+    <nav class="menu">
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="menu-list" id="menu-list">
+            <li class="menu-item">Inicio</li>
+            <li class="menu-item">Servicios
+                <ul class="submenu">
+                    <li class="submenu-item">Subservicio 1</li>
+                    <li class="submenu-item">Subservicio 2</li>
+                    <li class="submenu-item">Subservicio 3</li>
+                </ul>
+            </li>
+            <li class="menu-item">Sobre Nosotros</li>
+            <li class="menu-item">Contacto</li>
+        </ul>
+    </nav>
+
+  <script>  document.getElementById('hamburger').addEventListener('click', function() {
+    document.getElementById('menu-list').classList.toggle('active');
+});</script>
+</body>
+</html>
